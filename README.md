@@ -5,19 +5,23 @@ The CSV files of scraped data are also included.
 
 All scripts depend on selenium, beautifulsoup4, chromedriver, and Google Chrome Beta. chromerdriver's version must match your chrome version. These scripts use version 104.0.5112.20
 
-r/cybersecurity
+r/cybersecurity:
+
 The questions asked in this subreddit seemed to be very career oriented-people wondering about the job market for cybersecurity. There were few questions about general cybersecurity.
 
-cisco
+cisco:
+
 The questions are mostly about cisco's security products, such as Cisco's TALOS group's software.
 
-MalwareTips
+MalwareTips:
+
 The website is meant for general discussion about cybersecurity and malware, and the posts reflect that. They aren't about specific cybersecurity products, but rather are problems and questions normal people face on the internet.
 
-Wilders Security
-The website is split up into sections, some of which discuss solely about security products, and some with peoples general questions about privacy and malware. The product questions seem to outnumber the general questions.
+Wilders Security:
 
-issues faced:
+The website is split up into sections, some of which discuss solely about security products, and some with peoples general questions about privacy and malware. The product questions seem to outnumber the general questions.  
+  
+Issues faced:
 - Websites may want to send you notifications and will cause a pop up near the url of the page that can only be manually closed.
 - Google Chrome version 103.0.5060.134 has a bug with selenium where elements are randomly unclickable, solved by using Google Chrome Beta version 104
 - Cisco changed the way their website is laid out (changing html tags and the user end layout), rendering previously made code unusable. No fix other than to change tags/classes/selectors/xpaths in the code
