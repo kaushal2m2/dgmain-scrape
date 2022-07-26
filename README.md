@@ -31,3 +31,4 @@ Issues faced:
 - When reddit opened a post, it laid the post on top of the previous page, so all the previous page's html was still present, along with the post, making it very difficult to read only the post. No fix was found. To combat this oldreddit was used.
 - Reddit only stores a max of 1000 posts in its cache for each filter that is given to it. Nothing we could do about that.
 - PaloAltoNetworks (no script in this repo) sent a pop up for a survey at a random time, making selenium clicks cause an exception. No fix found.
+- TechRepublic had images under most questions that needed to be avoided when scraping through questions.
