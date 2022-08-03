@@ -64,7 +64,7 @@ for i in range(1, 15):
         # get the html of the page to read the dates
         page = driver.page_source
         soup = BeautifulSoup(page, 'html.parser')
-#         dat = soup.find_all('time', datetime='MM-dd-yyyy hh:mm a') THIS LINE GETS CHANGED
+#         dat = soup.find_all('time', datetime='MM-dd-yyyy hh:mm a') THIS LINE GETS CHANGED. REPLACE WITH LINES 68 through 71
         datetiles = soup.find_all('div', class_='custom-tile-date')
         dat = []
         for datetile in datetiles:
