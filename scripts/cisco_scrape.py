@@ -64,7 +64,12 @@ for i in range(1, 15):
         # get the html of the page to read the dates
         page = driver.page_source
         soup = BeautifulSoup(page, 'html.parser')
-        dat = soup.find_all('time', datetime='MM-dd-yyyy hh:mm a')
+#         dat = soup.find_all('time', datetime='MM-dd-yyyy hh:mm a') THIS LINE GETS CHANGED
+        datetiles = soup.find_all('div', class_='custom-tile-date')
+        dat = []
+        for datetile in datetiles:
+            dat.append(datetile.find('time', datetime='MM-dd-yyyy hh:mm a'))
+        
         diff = [(datetime.today() - datetime.strptime(dt.string.strip()
                  [0:10], "%m-%d-%Y")).days for dt in dat]  # difference between each post date and today
         ct = 0
